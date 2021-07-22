@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>톰켓 연뎔되는지 테스트용</title>
+<title>톰켓 연결되는지 테스트용</title>
 </head>
 <body>
 	테스트입니다.
