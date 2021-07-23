@@ -62,27 +62,42 @@
 </head>
 <body>
 	
-	
-	<div class="wrapper">
-		<p><a href="diary">오늘의 일</a></p>
-		<div class="title">
-			<p>제목</p> 
-			<input type="text" id="title" maxlength="30"/>
+	<form id="dataForm">
+		<div class="wrapper">
+			<p><a href="diary">오늘의 일</a></p>
+			<div class="title">
+				<p>제목</p> 
+				<input type="text" id="title" maxlength="30"/>
+			</div>
+			<div class="content">
+				<p>내용</p> 
+				<textarea id="content"></textarea>
+			</div>
+			<div class="buttonsWrap">
+				<button onclick="save();">저장</button>
+				<button>취소</button>
+			</div>
 		</div>
-		<div class="content">
-			<p>내용</p> 
-			<textarea id="content"></textarea>
-		</div>
-		<div class="buttonsWrap">
-			<button onclick="save();">저장</button>
-			<button>취소</button>
-		</div>
-	</div>
+	</form>
 </body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
 	
+	var dataForm = $('#dataForm').serialize();
+	
 	$(document).ready(function(){
-		
+		$.ajax({
+			type		: 'POST'
+			, url		: '/diaryWrite'
+			, data		: ''
+			, dataType	: ''
+			, success	: function(resut){
+				
+			}
+			, error		: function(){
+				
+			}
+		})
 	});
 
 
@@ -91,4 +106,6 @@
 		
 	}
 </script>
+
+
 </html>
