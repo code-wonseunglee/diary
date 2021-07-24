@@ -1,4 +1,4 @@
-package com.wony.diary;
+package com.wony.diary.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

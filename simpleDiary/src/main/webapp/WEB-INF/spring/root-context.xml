@@ -14,7 +14,7 @@
 		<beans:property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
 		<beans:property name="username" value="WONDIARY"/>
 		<beans:property name="password" value="1219"/>
-	</beans:bean>	
+	</beans:bean>
 		
 	<beans:bean name="transactionTemplate"
 		class="org.springframework.transaction.support.TransactionTemplate">
