@@ -8,7 +8,7 @@ public interface DiaryDAO {
 	
 	public void write(DiaryWriteDTO dto) throws Exception;
 	
-	public DiaryDAO read(Integer bno) throws Exception;
+	public DiaryWriteDTO read(Integer bno) throws Exception;
 	
 	public void update(DiaryWriteDTO dto) throws Exception;
 
