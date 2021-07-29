@@ -15,7 +15,7 @@ public class DiaryDAOImpl implements DiaryDAO {
 	@Inject
 	private SqlSession session;
 	
-	private static String namespace = "mapper.diary";
+	private static String namespace = "mapper.diary"; 
 
 	@Override
 	public void write(DiaryWriteDTO dto) throws Exception {
