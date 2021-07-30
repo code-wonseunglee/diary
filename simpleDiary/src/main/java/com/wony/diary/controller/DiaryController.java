@@ -14,7 +14,12 @@ public class DiaryController {
     
 	//다이어리 View 페이지
 	@RequestMapping("/diary")
-	public ModelAndView myDiary() {
+	public ModelAndView myDiary(HttpServletRequest req, HttpServletResponse res) {
+		
+		// view 단에서 원하는 데이터를 가져올 때
+		// jsp -> name="name" 일 경우
+		String gpName = req.getParameter("name");
+		
 		
 		ModelAndView mv = new ModelAndView("/diary/myDiary");
 		
