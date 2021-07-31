@@ -1,5 +1,8 @@
 package com.wony.diary.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -18,10 +21,16 @@ public class DiaryController {
 		
 		// view 단에서 원하는 데이터를 가져올 때
 		// jsp -> name="name" 일 경우
-		String gpName = req.getParameter("name");
+		// String gpName = req.getParameter("name");
 		
 		
 		ModelAndView mv = new ModelAndView("/diary/myDiary");
+		
+		Date date = new Date(); 
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+		String nowDate = sdf.format(date);
+		
+		mv.addObject("nowDate", nowDate);
 		
 		return mv;
 	}
