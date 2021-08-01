@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.wony.diary.dto.DiaryWriteDTO;
 
 @Controller
+@RequestMapping("/main")
 public class DiaryController {
     
 	//다이어리 View 페이지
