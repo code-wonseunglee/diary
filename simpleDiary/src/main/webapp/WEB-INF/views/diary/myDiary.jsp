@@ -63,6 +63,7 @@
 <body>
 	<div style="display: inline-block;">오늘 날짜 ${nowDate }</div>
 	<button> 날짜 변경 </button>
+	<div>${testDate }</div>
 	<form id="dataForm">
 		<div class="wrapper">
 			<p><a href="diary">오늘의 일</a></p>

@@ -1,6 +1,7 @@
 package com.wony.diary.controller;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
@@ -26,12 +27,32 @@ public class DiaryController {
 		
 		
 		ModelAndView mv = new ModelAndView("/diary/myDiary");
+		Calendar cal = Calendar.getInstance();
 		
+		String year = Integer.toString(cal.get(Calendar.YEAR)+1);
+		String nextMonth = "";
+		
+//		if(cal.get(Calendar.MONTH) == 12) {
+//			year = Integer.toString(cal.get(Calendar.YEAR)+1);
+//		} else {
+//			year = Integer.toString(cal.get(Calendar.YEAR));
+//		}
+//		
+		
+		if(cal.get(Calendar.MONTH)+1 <= 10) {
+			nextMonth = "0"+ Integer.toString(cal.get(Calendar.MONTH)+2);
+		} else {
+			nextMonth = Integer.toString(cal.get(Calendar.MONTH)+1);
+		}
+		
+		String testDate = year + nextMonth;
 		Date date = new Date(); 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM");
 		String nowDate = sdf.format(date);
 		
 		mv.addObject("nowDate", nowDate);
+		mv.addObject("testDate",testDate);
 		
 		return mv;
 	}
