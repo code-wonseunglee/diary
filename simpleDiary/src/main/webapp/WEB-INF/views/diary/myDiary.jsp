@@ -107,6 +107,19 @@
 		
 		
 	}
+	
+	// name의 값을 갖고 오기
+	function jQ(){
+		// name = id
+		var nameVal = $("input:text[name=id]").val();
+		
+		// 비활성화시키기
+		$("#disabledBT").attr("disabled", true);
+		
+		
+	}
+	
+	
 </script>
 
 
