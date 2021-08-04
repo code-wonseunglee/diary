@@ -86,24 +86,30 @@
 <script>
 	
 	var dataForm = $('#dataForm').serialize();
+	var param = {
+			// parameter 로 넘길 것들 key : value
+			
+	}
 	
 	$(document).ready(function(){
-		$.ajax({
-			type		: 'POST'
-			, url		: '/diaryWrite'
-			, data		: ''
-			, dataType	: ''
-			, success	: function(resut){
-				
-			}
-			, error		: function(){
-				
-			}
-		})
+		
+		
 	});
 
 
 	function save(){
+		
+		$.ajax({
+			type		: 'POST'
+			, url		: '/diaryWrite'
+			, data		: param
+			, success	: function(resut) {
+				
+			}
+			, error		: function(jqXHR, textStatus, errorThrown){
+					console.log(errorThrown);
+			}
+		});
 		
 		
 	}
