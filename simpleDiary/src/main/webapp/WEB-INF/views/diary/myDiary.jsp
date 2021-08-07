@@ -89,6 +89,7 @@
 	var param = {
 			// parameter 로 넘길 것들 key : value
 			
+			
 	}
 	
 	$(document).ready(function(){
