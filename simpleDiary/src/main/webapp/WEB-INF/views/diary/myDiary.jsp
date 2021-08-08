@@ -77,6 +77,7 @@
 			</div>
 			<div class="buttonsWrap">
 				<button onclick="save();">저장</button>
+				
 				<button>취소</button>
 			</div>
 		</div>
