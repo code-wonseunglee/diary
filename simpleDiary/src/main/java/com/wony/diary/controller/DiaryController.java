@@ -17,6 +17,23 @@ import com.wony.diary.dto.DiaryWriteDTO;
 @RequestMapping("/main")
 public class DiaryController {
     
+	@RequestMapping("/diaryList")
+	public ModelAndView diaryList(HttpServletRequest req, HttpServletResponse res ) {
+		
+		ModelAndView mv = new ModelAndView("/diary/diaryList");
+		
+		
+		
+		
+		
+		
+		return mv;
+	}
+	
+	
+	
+	
+	
 	//다이어리 View 페이지
 	@RequestMapping("/diary")
 	public ModelAndView myDiary(HttpServletRequest req, HttpServletResponse res) {
@@ -64,8 +81,13 @@ public class DiaryController {
 		
 		DiaryWriteDTO dw = new DiaryWriteDTO();
 		
-		
-		
 	}
 
+	
+	
+	
+	
+	
+	
+	
 }

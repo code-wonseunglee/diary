@@ -73,7 +73,7 @@
 			</div>
 			<div class="content">
 				<p>내용</p> 
-				<textarea id="content"></textarea>
+				<textarea id="content" maxlength="1000"></textarea>
 			</div>
 			<div class="buttonsWrap">
 				<button onclick="save();">저장</button>
