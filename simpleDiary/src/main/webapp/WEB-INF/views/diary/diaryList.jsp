@@ -81,7 +81,7 @@
 				<th>작성자</th>
 				<th>수정일</th>
 			</tr>
-			
+			 
 		<%-- 	
 			<c:forEach items="" var="">
 			<tr>
