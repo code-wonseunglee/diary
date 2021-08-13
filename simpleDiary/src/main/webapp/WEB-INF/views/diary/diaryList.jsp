@@ -82,6 +82,7 @@
 				<th>수정일</th>
 			</tr>
 			 
+			 
 		<%-- 	
 			<c:forEach items="" var="">
 			<tr>
