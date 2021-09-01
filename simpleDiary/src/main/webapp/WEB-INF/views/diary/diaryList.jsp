@@ -96,6 +96,7 @@
 				<td>${regrDate }</td>
 				<td>${modrDate }</td>
 				<td>${regWriter }</td>	
+				
 			</tr>
 			</c:forEach>
 		--%>
